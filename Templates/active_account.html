@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+<legend>Hi {{username}}</legend><br><hr>
+<strong>Please click on the link to confirm your registration </strong>
+<a href="https://teamfirecode.herokuapp.com/activate/{{uid}}/{{token}}"><button>Active Account</button></a>
+
+    
+
+{% endautoescape %}

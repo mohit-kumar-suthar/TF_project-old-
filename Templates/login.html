@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Team FireCode{% endblock %}
+{% block body %}
+{% include 'index.html'%}
+<div class="container">
+    <div class="row" id="form-row">
+        <div class="col-md"></div>
+        <div class="con-md"></div>
+        <div class="col-md-4" id="reg-page">
+            <form method="post">
+                {% csrf_token %}
+                <legend>Login</legend><hr>
+                <div class="form-group">
+                    {{login_form.username}}
+                </div>
+                <div class="form-group">
+                    {{login_form.password}}
+                </div>
+                <input type="submit" class="btn btn-outline-primary" id="btn-form" value="Login">
+            </form>
+        </div> 
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "C:\\Users\\mohit\\envs\\myprojects\\Scripts\\python.exe",
+    "python.testing.pytestArgs": [
+        "TF_app"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
+}

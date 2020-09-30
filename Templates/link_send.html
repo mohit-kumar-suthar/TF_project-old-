@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Send Email Sucessfully...{% endblock %}
+{% block body %}
+{% include 'index.html'%}
+<div class="container">
+    <div class="row" id="form-row">
+        <div class="col-md"></div>
+        <div class="con-md"></div>
+        <div class="col-md-4" id="reg-page">
+            <legend>activation link send successfully on your register email</legend><hr>
+            <form action="{% url 'login'%}">
+                <input type="submit" class="btn btn-outline-primary" id="btn-form" value="Login Here">
+            </form>
+        </div> 
+    </div>
+</div>
+{% endblock %}
