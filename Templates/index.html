@@ -1,54 +1,13 @@
-{% extends "base.html" %}
-{% block title %}Team FireCode{% endblock %}
+{% extends "base.html"%}
+{% block title %}Team FireCode - Home{%endblock%}
+
 {% block body %}
-<nav class="navbar navbar-expand-lg shadow-sm ">
-  <a class="navbar-brand" href="{% url 'index' %}"><hr><legend id="logo">TEAM FIRECODE</legend><hr></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Source code</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blogs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Become member</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About me</a>
-      </li>
-    </ul>
-  </div>
-  <li class="nav justify-content-end">
-    {% if not login_form %}
-    <a href="{% url 'login' %}">
-    <button class="btn btn-outline-primary" id="btn-nav">Login</button>
-  </a>
-    {% endif %}
-    {% if not register_form %}
-    <a href="{% url 'register' %}">
-      <button class="btn btn-outline-success" id="btn-nav">Register</button>
-    </a>
-    {% endif %}
-  </li>
-  </nav>
-  {%if not register_form and not login_form %}
-  <div class="container">
-    <div class="row" id="form-row">
-      <div class="col-md-4" id="reg-page">
-        <h4>On Construction Mode</h6>
-      </div>
+{% include "header.html" %}
+<div class="container">
+  <div class="row" id="form-row">
+    <div class="col-md-4" id="reg-page">
+      <h4>On Construction Mode</h6>
     </div>
   </div>
- {%endif%}
-
-{% endblock %}
+</div>
+{% endblock%}

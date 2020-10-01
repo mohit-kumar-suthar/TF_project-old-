@@ -16,7 +16,7 @@ import time
 # Create your views here.
 
 def index_view(request):
-    return render(request,'index.html',{'Name':'Mohit Suthar'})
+    return render(request,'index.html')
 
 def login_view(request):
     form=login()
